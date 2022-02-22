@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root{
@@ -15,7 +15,7 @@
     --font2: 'Lato', sans-serif;
 }
 
-body, nav, p{
+body, nav{
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
@@ -27,28 +27,29 @@ body{
 
 /*configuração do cabeçãlho*/
  .header{
-     background-image: url(../imagens/back_header1.png);
+     background: url(../imagens/back_header1.png);
      background-repeat: no-repeat;
-     background-position: 0 center;
+     background-size:cover;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-     padding: 11px;
      width: 100%;
-     
      height: 90vh;
      margin: 0px;
      align-items: center;
  }
  nav{
      display: flex;
+     flex-wrap: wrap;
      margin-top: -150px;
  }
      
  .menu{
+    flex-wrap: wrap;
     text-decoration: none;
     color: var(--cor0);
-    margin-left: 15px;text-shadow: 1px 1px 4px black;
+    margin: 0 20px;
+    text-shadow: 1px 1px 4px black;
  }
 
  .logo{
@@ -56,7 +57,107 @@ body{
  }
 
 /*h1*/
-h1{
+#servicos h1{
     color: var(--cor0);
     font-family:var(--font1) ;
+    font-size: 36px;  
+    text-align: center;
+    margin: 150px auto 0;
 }
+#servicos p{
+    color: var(--cor0);
+    font-family:var(--font1);
+    text-align: center;
+    margin: auto;
+}
+.divisor{
+    width: 50px;
+    height: 4px;
+    background-color: var(--cor3);
+    margin:30px auto 150px ;
+    
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+    max-height: 410px;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+
+.card{
+    flex: 2 2 400px;
+    width: 40%;
+    max-width: 400px;
+    height: 50%;
+    max-height: 150px;
+    margin: 30px 50px;
+
+
+}
+
+.card h2{
+    color:var(--cor3);
+    text-align: center;
+    margin: 0 auto 10px;
+    font-family: var(--font2);
+}
+
+.card p,ul{
+    font-size: 13px;
+    color: var(--cor0);
+    padding: 0 20px;
+    font-family: var(--font0);
+}
+.segurança h1{
+    color: var(--cor0);
+    font-family:var(--font1) ;
+    font-size: 36px;
+    text-align: center;
+    margin: 150px auto 0;
+}
+
+.segurança h3{
+    color: var(--cor0);
+    font-family:var(--font1) ;
+    font-size: 21px ;
+    font-weight: 300;
+    text-align: center;
+    margin:  auto 150px;
+}
+
+.segurança p{
+    color: var(--cor0);
+    font-family:var(--font1) ;
+    font-size: 18px;
+    font-weight:bold ;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603);
+    margin: 50px auto ;
+}
+
+.btn a{
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--cor3);
+    text-align:center;
+    padding-top: 10px;
+    margin: 0 auto ;
+    font-family: var(--font2);
+    color: var(--cor0);
+}
+.btn a:hover{
+    color: var(--cor0);
+    border: 2px solid var(--cor0);
+}
+
+.segurança{
+    background: url(../imagens/segurança.png) right center no-repeat  fixed;
+    background-size:cover;
+} 
