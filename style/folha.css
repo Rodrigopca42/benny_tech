@@ -222,3 +222,14 @@ body{
 .foto{
     margin: 0 auto;
 }
+
+.maps{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.maps iframe{
+    margin: 0 auto;
+}
