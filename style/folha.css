@@ -292,3 +292,20 @@ body{
 .contato :nth-child(2){
        text-align: right;
 }
+
+footer{
+    background: black;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+   
+}
+
+.rodape {
+    max-width: auto;
+    text-align: center;
+    flex-direction: row;
+    flex: auto;
+    
+}
