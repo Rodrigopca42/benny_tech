@@ -110,17 +110,24 @@ body{
      
  }
 
- 
-
 /*h1*/
-#servicos h1{
+.servicos h1,h2{
     color: var(--cor0);
     font-family:var(--font1) ;
     font-size: 36px;  
     text-align: center;
     margin: 150px auto 0;
 }
-#servicos p{
+
+.servicos h2{
+    color: var(--cor3);
+    font-family:var(--font1) ;
+    font-size: 36px;  
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+.servicos p{
     color: var(--cor0);
     font-family:var(--font1);
     text-align: center;
@@ -131,8 +138,18 @@ body{
     height: 4px;
     background-color: var(--cor3);
     margin:30px auto 150px ;
-    
+}
 
+#venda{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.venda1:visited{
+    color: var(--cor3);
+    text-decoration: overline;
 }
 
 .container{
@@ -248,6 +265,8 @@ body{
 .foto{
     margin: 0 auto;
 }
+
+
 /*página de contatos*/
 .maps{
     display: flex;
@@ -291,6 +310,68 @@ body{
 
 .contato :nth-child(2){
        text-align: right;
+}
+
+#formulario{
+    width: 100%;
+    max-width: 800px;
+    max-height: 800px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.for{
+    border-radius: 7px;
+    width: 300px; 
+    height: 30px;
+    margin: 5px;
+}
+
+.mens{
+    border-radius: 7px;
+    width:500px; 
+    height: 150px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sub{
+    background: var(--cor3);
+    color: black;
+    width: 150px;
+    height: 40px;
+    font-size: larger;
+}
+.sub:hover{
+ background: var(--cor2);
+ color: var(--cor3);
+
+}
+
+/*Página de Portifólio*/
+
+#portifolio{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+#portifolio > .port{
+    flex: 1 1 150px;
+    margin: 15px;
+
+}
+.port img{
+    max-width: 100%;
+    display: block;
+}
+
+.port p{
+    color: var(--cor3);
+    text-align: center;
 }
 
 footer{
